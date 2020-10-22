@@ -1,0 +1,16 @@
+Note: accessing comd line from serial, connect device to terminal/ putyy and reboot device
+
+command line
+
+#disable eth port (with optional vlan)
+configure
+set interfaces eth1 vif 20 disable
+commit
+save
+
+
+#enable eth port
+configure
+delete interfaces eth1 vif 20 disable 
+commit 
+save
